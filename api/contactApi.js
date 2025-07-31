@@ -83,7 +83,7 @@ const contactValidationSchema = joi.object({
 });
 
 // GMAIL TRANSPORTER
-const transporter = nodemailer.createTransporter({
+const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: GMAIL_USER,
