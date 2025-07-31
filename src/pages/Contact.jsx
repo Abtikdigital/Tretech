@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Contact from '../Section/Contact'
+import ContactSection from '../Section/Contact'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -107,7 +107,7 @@ const Contact = () => {
           </div>
 
           {/* Form */}
-       <Contact/>
+       <ContactSection/>
         </div>
       </section>
 
