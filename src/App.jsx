@@ -9,6 +9,7 @@ import Service from './pages/Service';
 import Contact from './pages/Contact';
 import Navbar from './Section/Navbar';
 import Footer from './Section/Footer';
+import ScrollToTop from './utils/ScrollToUp';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop/>
       <Navbar />
         <Routes>
           

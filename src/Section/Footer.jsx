@@ -30,7 +30,7 @@ const Footer = () => {
         {/* Right: Contact / Social */}
         <div>
           <h4 className="text-lg font-semibold mb-4">Contact</h4>
-          <p className="text-sm mb-2">Email: <a href="mailto:mail.purchase@tetetratech.com" className="underline">mail.purchase@tetetratech.com</a></p>
+          <p className="text-sm mb-2">Email: <a href="mailto:tetratech.engg@gmail.com" className="underline">tetratech.engg@gmail.com</a></p>
           <p className="text-sm mb-4">Phone: <a href="https://wa.me/917378751788" className="underline">+91 73787 51788</a></p>
           <div className="flex justify-center md:justify-start space-x-4">
             <a href="https://instagram.com/tetratechengineering" target="_blank" rel="noreferrer">Instagram</a>

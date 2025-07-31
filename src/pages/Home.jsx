@@ -146,7 +146,7 @@ const Home = () => {
                 <span className="text-yellow-400 text-2xl">✉️</span>
                 <div>
                   <p className="font-semibold">Email:</p>
-                  <p>info@tetratech.com</p>
+                  <p>tetratech.engg@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
