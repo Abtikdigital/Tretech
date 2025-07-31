@@ -444,7 +444,7 @@ const userTemplate = (data) => {
   <body>
     <div class="email-wrapper">
       <div class="header">
-        TétraTech
+        TetraTech
       </div>
       <div class="header-divider"></div>
       <div class="content">
