@@ -44,14 +44,14 @@ const Service = () => {
 
       {/* HERO SECTION */}
       <section
-        className="relative h-[70vh] flex items-center justify-center bg-cover bg-center text-white"
-        style={{ backgroundImage: `url(${bgHero})` }}
+        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center text-white"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80')" }}
       >
         <div className="absolute inset-0 bg-[#003366]/80 z-0"></div>
         <div className="relative z-10 text-center px-6 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Services & Solutions</h1>
           <p className="text-lg mb-6">Delivering cutting-edge process systems for the Food, Pharma & Beverage industry.</p>
-          <a href="/contact" className="bg-yellow-400 text-[#003366] px-6 py-3 font-semibold rounded shadow hover:bg-yellow-300 transition">
+          <a href="/contact" className="bg-[#DB1A13] inline-flex justify-center items-center text-white px-5 py-2.5 text-base font-semibold rounded-full hover:bg-[#b91610] transition">
             Request a Quote
           </a>
         </div>
@@ -116,7 +116,7 @@ const Service = () => {
             href="https://wa.me/917378751788"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-[#003366] font-semibold px-6 py-3 rounded-full shadow transition"
+            className="bg-[#DB1A13] text-white px-5 py-2.5 text-base font-semibold rounded-full hover:bg-[#b91610] transition"
           >
             📞 Schedule a Call
           </a>

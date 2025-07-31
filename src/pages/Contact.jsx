@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ContactSection from '../Section/Contact'
+import { Link } from 'react-router-dom'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -33,28 +34,22 @@ const Contact = () => {
   return (
     <div className="text-gray-800">
       {/* Hero Section */}
-      <section className="h-[70vh] sm:h-[80vh] bg-gradient-to-r from-[#003366] to-[#0066cc] flex flex-col justify-center items-center text-center px-4 text-white">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-          Contact <span className="text-[#DB1A13]">Us</span>
-        </h1>
-        <p className="text-base md:text-lg text-center max-w-3xl mx-auto text-gray-200 mb-8 leading-relaxed">
-          Ready to start your next project? Get in touch with our expert team to bring your vision to life.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#contact-form"
-            className="bg-[#DB1A13] text-white px-5 py-2.5 text-base font-semibold rounded-full hover:bg-[#b91610] transition"
-          >
-            Send Message
-          </a>
-          <a
-            href="tel:+917378751788"
-            className="border-2 border-white text-white px-5 py-2.5 text-base font-semibold rounded-full hover:bg-white hover:text-[#003366] transition"
-          >
-            Call Now
-          </a>
+  <section className="h-[90vh] bg-cover bg-center relative flex flex-col justify-center items-center text-center px-4 text-white" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80')" }}>
+        <div className="absolute inset-0 bg-[#003366]/80 z-0"></div>
+        <div className="relative z-10 max-w-4xl">
+          <h1 className="text-5xl font-bold mb-4">
+           Contact <span className="text-[#DB1A13]">Us</span>
+          </h1>
+          <p className="text-lg mb-8 text-gray-200">
+           Ready to start your next project? Get in touch with our expert team to bring your vision to life.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to='/about' className="bg-[#DB1A13] text-white px-5 py-2.5 text-base font-semibold rounded-full hover:bg-[#b91610] transition">Learn More</Link>
+            {/* <a href="#meet-team" className="border-2 border-white text-white px-6 py-2.5 rounded-full font-semibold  hover:bg-white hover:text-[#003366] transition">Meet Our Team</a> */}
+          </div>
         </div>
       </section>
+
 
       {/* Contact Details & Form Section */}
           <section className="py-12 md:py-16 px-4 md:px-20 bg-gradient-to-br from-gray-50 to-blue-50">

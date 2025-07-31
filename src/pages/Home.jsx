@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import bgHero from '../assets/Food-Beverages-and-Agriculture.webp'
 import Contact from '../Section/Contact';
-
+import Img1 from "../assets/fruits-vegetable-snack-wooden-platter-min.jpg"
 const Home = () => {
   return (
     <div className="bg-white text-gray-800">
@@ -10,13 +10,13 @@ const Home = () => {
       {/* HERO SECTION */}
       <section
         className="relative h-[90vh] flex items-center justify-center px-6 text-white bg-cover bg-center"
-        style={{ backgroundImage: `url(${bgHero})` }}
+       style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80')" }}
       >
-        <div className="absolute inset-0 bg-[#003366]/80 z-0"></div>
+        <div className="absolute inset-0 bg-[#003366]/80  z-0"></div>
         <div className="text-center max-w-3xl z-10">
           <h1 className="text-5xl font-bold mb-6 leading-tight">Engineering Excellence for Food, Pharma & Beverage</h1>
           <p className="text-lg mb-6">Custom Machines | Process Systems | Automation Solutions</p>
-          <a href="/contact" className="bg-yellow-400 hover:bg-yellow-300 text-[#003366] px-6 py-3 font-semibold rounded shadow transition">Get a Quote</a>
+          <Link to="/contact" className="bg-[#DB1A13] text-white px-5 py-2.5 text-base font-semibold rounded-full hover:bg-[#b91610] transition">Get a Quote</Link>
         </div>
       </section>
 
@@ -34,7 +34,7 @@ const Home = () => {
           </div>
           <div className="rounded-lg shadow-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1581091870622-2c58f6d21f1e?auto=format&fit=crop&w=800&q=80"
+              src={Img1}
               alt="Factory"
               className="w-full h-64 object-cover"
             />

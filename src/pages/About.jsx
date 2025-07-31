@@ -1,22 +1,23 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import Img1 from "../assets/Food-Beverages-and-Agriculture.webp"
 const About = () => {
   return (
     <div className="text-gray-800 bg-white">
 
       {/* Hero Section */}
-      <section className="h-[80vh] bg-cover bg-center relative flex flex-col justify-center items-center text-center px-4 text-white" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80')" }}>
+      <section className="h-[90vh] bg-cover bg-center relative flex flex-col justify-center items-center text-center px-4 text-white" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80')" }}>
         <div className="absolute inset-0 bg-[#003366]/80 z-0"></div>
         <div className="relative z-10 max-w-4xl">
           <h1 className="text-5xl font-bold mb-4">
-            About <span className="text-yellow-400">Tetratech</span>
+            About <span className="text-[#DB1A13]">Tetratech</span>
           </h1>
           <p className="text-lg mb-8 text-gray-200">
             Discover our journey, mission, and the passionate team driving innovation forward.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#about-company" className="bg-yellow-400 hover:bg-yellow-300 text-[#003366] px-6 py-3 font-semibold rounded shadow transition">Learn More</a>
-            <a href="#meet-team" className="border-2 border-white text-white px-6 py-3 font-semibold rounded hover:bg-white hover:text-[#003366] transition">Meet Our Team</a>
+            <Link href="/about" className="bg-[#DB1A13] text-white px-5 py-2.5 text-base font-semibold rounded-full hover:bg-[#b91610] transition">Learn More</Link>
+            {/* <a href="#meet-team" className="border-2 border-white text-white px-6 py-2.5 rounded-full font-semibold  hover:bg-white hover:text-[#003366] transition">Meet Our Team</a> */}
           </div>
         </div>
       </section>
@@ -117,7 +118,7 @@ const About = () => {
           href="https://wa.me/917378751788"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-yellow-400 hover:bg-yellow-300 text-[#003366] px-6 py-3 font-semibold rounded-full transition"
+          className="bg-[#DB1A13] text-white px-5 py-2.5 text-base font-semibold rounded-full hover:bg-[#b91610] transition"
         >
           Contact Us on WhatsApp
         </a>
