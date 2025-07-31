@@ -109,6 +109,7 @@ const sendMail = async (from, to, subject, template) => {
 };
 
 // firm Template - Updated with subject field
+
 const firmTemplate = (data) => {
   let { name, email, subject, message } = data;
 
@@ -143,8 +144,8 @@ const firmTemplate = (data) => {
           }
           .header {
             text-align: center;
-            background: #f56015;
-            background: linear-gradient(135deg, #f56015, #ffa94d);
+            background: #DB1A13;
+            background: linear-gradient(135deg, #DB1A13, #ff4d4d);
             padding: 35px 20px;
             color: white;
             font-size: 32px;
@@ -154,7 +155,7 @@ const firmTemplate = (data) => {
           }
           .header-divider {
             height: 8px;
-            background: #ffb367;
+            background: #ff6666;
             background: linear-gradient(90deg, rgba(255,255,255,0.2), rgba(255,255,255,0.5), rgba(255,255,255,0.2));
           }
           .content {
@@ -179,8 +180,8 @@ const firmTemplate = (data) => {
             line-height: 1.6;
           }
           .highlight {
-            background-color: rgba(245, 96, 21, 0.08);
-            border-left: 4px solid #f56015;
+            background-color: rgba(219, 26, 19, 0.08);
+            border-left: 4px solid #DB1A13;
             padding: 15px;
           }
           table {
@@ -191,12 +192,12 @@ const firmTemplate = (data) => {
             border-radius: 14px;
             overflow: hidden;
             margin: 25px 0;
-            box-shadow: 0 5px 15px rgba(245, 96, 21, 0.08);
+            box-shadow: 0 5px 15px rgba(219, 26, 19, 0.08);
             font-size: 16px;
           }
           th {
-            background: #f56015;
-            background: linear-gradient(to right, #f56015, #f87e42);
+            background: #DB1A13;
+            background: linear-gradient(to right, #DB1A13, #ff3333);
             color: #ffffff;
             width: 30%;
             font-weight: 600;
@@ -220,7 +221,7 @@ const firmTemplate = (data) => {
             background-color: #fafafa;
           }
           a {
-            color: #f56015;
+            color: #DB1A13;
             text-decoration: none;
             font-weight: 500;
           }
@@ -298,7 +299,7 @@ const firmTemplate = (data) => {
       `;
 };
 
-// user Template - Updated with subject field
+// user Template - Updated with red color scheme
 const userTemplate = (data) => {
   let { name, email, subject, message } = data;
   return `
@@ -332,8 +333,8 @@ const userTemplate = (data) => {
       }
       .header {
         text-align: center;
-        background: #f56015;
-        background: linear-gradient(135deg, #f56015, #ffa94d);
+        background: #DB1A13;
+        background: linear-gradient(135deg, #DB1A13, #ff4d4d);
         padding: 35px 20px;
         color: white;
         font-size: 32px;
@@ -343,7 +344,7 @@ const userTemplate = (data) => {
       }
       .header-divider {
         height: 8px;
-        background: #ffb367;
+        background: #ff6666;
         background: linear-gradient(90deg, rgba(255,255,255,0.2), rgba(255,255,255,0.5), rgba(255,255,255,0.2));
       }
       .content {
@@ -368,8 +369,8 @@ const userTemplate = (data) => {
         line-height: 1.6;
       }
       .highlight {
-        background-color: rgba(245, 96, 21, 0.08);
-        border-left: 4px solid #f56015;
+        background-color: rgba(219, 26, 19, 0.08);
+        border-left: 4px solid #DB1A13;
         padding: 15px;
         margin-bottom: 25px;
       }
@@ -382,12 +383,12 @@ const userTemplate = (data) => {
       }
       .message-box h3 {
         margin-top: 0;
-        color: #f56015;
+        color: #DB1A13;
         font-size: 18px;
       }
       .button {
         display: inline-block;
-        background: linear-gradient(to right, #f56015, #f87e42);
+        background: linear-gradient(to right, #DB1A13, #ff3333);
         color: white;
         text-decoration: none;
         padding: 12px 28px;
@@ -416,7 +417,7 @@ const userTemplate = (data) => {
       .social-links a {
         display: inline-block;
         margin: 0 10px;
-        color: #f56015;
+        color: #DB1A13;
         text-decoration: none;
       }
       .footer-note {
@@ -478,6 +479,7 @@ const userTemplate = (data) => {
   </body>
 </html>`;
 };
+
 
 // MAIN FUNCTION - Updated validation and email sending
 const handler = async (req, res) => {
