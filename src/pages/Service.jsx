@@ -49,7 +49,7 @@ const Service = () => {
       >
         <div className="absolute inset-0 bg-[#003366]/80 z-0"></div>
         <div className="relative z-10 text-center px-6 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Services & Solutions</h1>
+          <h1 className="text-5xl font-bold mb-6 leading-tight">Services & Solutions</h1>
           <p className="text-lg mb-6">Delivering cutting-edge process systems for the Food, Pharma & Beverage industry.</p>
           <a href="/contact" className="bg-[#DB1A13] inline-flex justify-center items-center text-white px-5 py-2.5 text-base font-semibold rounded-full hover:bg-[#b91610] transition">
             Request a Quote
